@@ -12,6 +12,6 @@ export function addMembers(req: NextApiRequest, res: NextApiResponse) {
   res.status(200).json({ message: 'Membres ajoutés avec succès' });
 }
 
-export function getChannels(req: NextApiRequest, res: NextApiResponse) {
+export function getChannels( res: NextApiResponse, req?: NextApiRequest) {
   res.status(200).json({ channels: [] });
 }
